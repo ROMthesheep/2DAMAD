@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio2</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-button *ngIf="contador%2!==0" (click)="clickListener()" expand="block" fill="clear" shape="round">
+  Muestra Nombre
+</ion-button>
+<ion-button *ngIf="contador%2 === 0" (click)="clickListener()" expand="block" fill="clear" shape="round">
+  Limpia pantalla
+</ion-button>
+<p *ngIf="c%2===0" >{{nombre}}</p>
+
+
+<ion-content>
+
+</ion-content>

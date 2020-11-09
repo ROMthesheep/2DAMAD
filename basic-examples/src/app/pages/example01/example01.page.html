@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>interpolation and filters</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <p>X vale={{ x }}</p>
+    <p>Y vale={{ y }}</p>
+    <p>X mas Y vale {{ x+y }}</p>
+    <p>La palabra secreta es "{{ word }}"</p>
+    <p>Mi amigo el alan en json {{person | json}}</p>
+    <p>Mi pana {{ person.name }} se dedica a {{ person.job }} y cobra {{ person.salary | currency:"€" }}</p>
+    
+  </div>
+</ion-content>

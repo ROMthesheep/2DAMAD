@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio02</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label>Pulgadas:</ion-label>
+    <ion-input [(ngModel)]="inches" (keyup)="unitChange(1)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Centimetros:</ion-label>
+    <ion-input [(ngModel)]="cm" (keyup)="unitChange(2)"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Metros:</ion-label>
+    <ion-input [(ngModel)]="meters" (keyup)="unitChange(3)"></ion-input>
+  </ion-item>
+
+
+</ion-content>

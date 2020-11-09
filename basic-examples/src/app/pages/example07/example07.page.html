@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Directiva *ngfor. uso de clases</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h1>Empleados:</h1>
+  <ionList>
+    <ion-item *ngFor="let emp of empleados">
+      <ion-label>
+        <h2>{{emp.nombre}}</h2>
+        <h3>{{emp.puesto}}</h3>
+        {{emp.sueldo}}€
+      </ion-label>
+    </ion-item>
+  </ionList>
+
+</ion-content>

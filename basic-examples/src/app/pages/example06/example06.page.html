@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>example06</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion">
+<ion-item>
+  <ion-label>Insert number:</ion-label>
+  <ion-input (keyup.enter)="addNum()" [(ngModel)]="inputN"></ion-input>
+</ion-item>
+<br>
+  <b>Numbers: </b>
+  <span *ngFor="let n of nums"> {{n}}</span>
+  <br>
+  <ion-item>
+    <ion-label>Insert fruit:</ion-label>
+    <ion-input (keyup.enter)="addFruit()" [(ngModel)]="inputF"></ion-input>
+  </ion-item>
+  <br>
+  <b>Fruits:</b>
+  <span *ngFor="let fruit of fruits"> {{fruit}}</span>
+  
+
+
+</ion-content>

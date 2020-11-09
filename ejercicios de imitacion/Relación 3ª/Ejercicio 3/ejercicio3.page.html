@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor= "let producto of carrito">
+      <ion-avatar slot="start">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{producto.item}}</h2>
+        <h3>{{producto.price}}€</h3>
+        <p>cantidad: {{producto.quantity}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-input 
+    [(ngModel)]="newItem"
+    type="text" 
+    placeholder="Nombre">
+  </ion-input>
+  <ion-input 
+    [(ngModel)]="newPrice"
+    type="number" 
+    placeholder="Precio">
+  </ion-input>
+  
+  <ion-input 
+    [(ngModel)]="newQuantity"
+    type="number" 
+    placeholder="Cantidad">
+  </ion-input>
+  <ion-button (click)="insertaProducto()" shape="round">
+    Add
+  </ion-button>
+  </ion-item>
+
+
+</ion-content>

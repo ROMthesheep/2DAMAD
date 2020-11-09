@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Events</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div>
+  <ion-button (click)="decrementValue()" color="secondary">-</ion-button>
+  <ion-button (click)='newRandomValue()' color="primary">new value</ion-button>
+  <ion-button (click)='incremetValue()' color="secondary">+</ion-button>
+  </div>
+  <h1>{{n}}</h1>
+
+  <ion-button (click)="reset()" expand='full'>Reset</ion-button>
+
+</ion-content>

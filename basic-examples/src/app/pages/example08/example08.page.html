@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Directiva estructural *ngIf</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="tMod(-10)">-10</ion-button>
+  <ion-button (click)="tMod(-1)">-</ion-button>
+  <ion-button (click)="tMod(+1)">+</ion-button>
+  <ion-button (click)="tMod(+10)">+10</ion-button>
+  
+  <h1>Temperatura: {{temp}}º</h1>
+  <p *ngIf="temp>40">Que calor!</p>
+  <p *ngIf="temp<10">Que friooo!</p>
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio03</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div id="display">
+    <div *ngFor="let product of arrayProductos; index as i; first as isFirst">
+     <h1>{{product.item}}</h1>
+     <h4 style="display: inline-block; margin-right: 2em;">precio: {{product.price}}</h4>
+     <h4 style="display: inline;">unidades: {{product.quantity}}</h4>
+    </div>
+  </div>
+  <h4>Total: {{total}}</h4>
+  
+</ion-content>

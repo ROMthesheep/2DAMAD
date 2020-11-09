@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>ejercicio1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Valor mínimo</ion-label>
+    <ion-input [(ngModel)]="minimo"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Valor máximo</ion-label>
+    <ion-input [(ngModel)]="maximo"></ion-input>
+  </ion-item>
+  <ion-button *ngIf="minimo < maximo"(click)="genAleat(maximo, minimo)">
+    GENERA NÚMERO
+  </ion-button>
+  <p (click)="interchangeNumbers()"  class="ion-padding">{{numAleat}}</p>
+
+</ion-content>

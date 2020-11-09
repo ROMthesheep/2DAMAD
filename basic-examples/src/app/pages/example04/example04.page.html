@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>User input</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- 
+    ()   p->Ts
+    []   p<-Ts
+    [()] p<->Ts
+   -->
+   
+  <ion-input placeholder="Write here..." [(ngModel)]="word"></ion-input> 
+  <ion-button (click)="clearText()" >
+    Clear text</ion-button>
+  <p>{{word | uppercase}}</p>
+</ion-content>
